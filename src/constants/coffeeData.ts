@@ -1,0 +1,173 @@
+import { CoffeeBean, GrindLevel, PreparationMethod, Topping } from '../types';
+
+export const COFFEE_BEANS: CoffeeBean[] = [
+  {
+    id: 'arabica-ethiopian',
+    name: 'Ethiopian Arabica',
+    origin: 'Ethiopia',
+    flavor: 'Fruity, floral, bright acidity',
+    strength: 3,
+    color: '#8B4513',
+  },
+  {
+    id: 'robusta-vietnamese',
+    name: 'Vietnamese Robusta',
+    origin: 'Vietnam',
+    flavor: 'Bold, earthy, bitter',
+    strength: 5,
+    color: '#654321',
+  },
+  {
+    id: 'arabica-colombian',
+    name: 'Colombian Arabica',
+    origin: 'Colombia',
+    flavor: 'Balanced, nutty, caramel',
+    strength: 4,
+    color: '#A0522D',
+  },
+  {
+    id: 'arabica-brazilian',
+    name: 'Brazilian Arabica',
+    origin: 'Brazil',
+    flavor: 'Chocolatey, smooth, low acidity',
+    strength: 3,
+    color: '#D2691E',
+  },
+];
+
+export const GRIND_LEVELS: GrindLevel[] = [
+  {
+    id: 'extra-coarse',
+    name: 'Extra Coarse',
+    description: 'Like sea salt',
+    particleSize: 'extra-coarse',
+    brewMethods: ['Cold Brew', 'French Press'],
+  },
+  {
+    id: 'coarse',
+    name: 'Coarse',
+    description: 'Like kosher salt',
+    particleSize: 'coarse',
+    brewMethods: ['French Press', 'Percolator'],
+  },
+  {
+    id: 'medium',
+    name: 'Medium',
+    description: 'Like table salt',
+    particleSize: 'medium',
+    brewMethods: ['Drip Coffee', 'Pour Over'],
+  },
+  {
+    id: 'fine',
+    name: 'Fine',
+    description: 'Like powdered sugar',
+    particleSize: 'fine',
+    brewMethods: ['Espresso', 'Moka Pot'],
+  },
+];
+
+export const PREPARATION_METHODS: PreparationMethod[] = [
+  {
+    id: 'espresso',
+    name: 'Espresso',
+    description: 'Concentrated coffee shot',
+    brewTime: 30,
+    temperature: 90,
+    icon: '☕',
+    animation: 'espresso-machine',
+  },
+  {
+    id: 'drip',
+    name: 'Drip Coffee',
+    description: 'Classic filtered coffee',
+    brewTime: 300,
+    temperature: 85,
+    icon: '☕',
+    animation: 'drip-brewing',
+  },
+  {
+    id: 'french-press',
+    name: 'French Press',
+    description: 'Full-bodied immersion brew',
+    brewTime: 240,
+    temperature: 93,
+    icon: '🫖',
+    animation: 'french-press',
+  },
+  {
+    id: 'pour-over',
+    name: 'Pour Over',
+    description: 'Manual precision brewing',
+    brewTime: 180,
+    temperature: 88,
+    icon: '☕',
+    animation: 'pour-over',
+  },
+];
+
+export const TOPPINGS: Topping[] = [
+  {
+    id: 'whole-milk',
+    name: 'Whole Milk',
+    category: 'milk',
+    price: 0,
+    color: '#FFFEF7',
+    icon: '🥛',
+  },
+  {
+    id: 'oat-milk',
+    name: 'Oat Milk',
+    category: 'milk',
+    price: 0.5,
+    color: '#F5F5DC',
+    icon: '🌾',
+  },
+  {
+    id: 'almond-milk',
+    name: 'Almond Milk',
+    category: 'milk',
+    price: 0.5,
+    color: '#FFEBCD',
+    icon: '🌰',
+  },
+  {
+    id: 'sugar',
+    name: 'Sugar',
+    category: 'sweetener',
+    price: 0,
+    color: '#FFFFFF',
+    icon: '🧂',
+  },
+  {
+    id: 'honey',
+    name: 'Honey',
+    category: 'sweetener',
+    price: 0.3,
+    color: '#FFD700',
+    icon: '🍯',
+  },
+  {
+    id: 'vanilla',
+    name: 'Vanilla Syrup',
+    category: 'flavor',
+    price: 0.6,
+    color: '#F5DEB3',
+    icon: '🧴',
+  },
+  {
+    id: 'cinnamon',
+    name: 'Cinnamon',
+    category: 'extra',
+    price: 0.2,
+    color: '#D2691E',
+    icon: '🥧',
+  },
+  {
+    id: 'whipped-cream',
+    name: 'Whipped Cream',
+    category: 'extra',
+    price: 0.8,
+    color: '#FFFAFA',
+    icon: '🍦',
+  },
+]; 

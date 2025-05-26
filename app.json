@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "Coffee Selector",
+    "slug": "coffee-selector",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#2C1810"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#2C1810"
+      }
+    },
+    "web": {}
+  }
+} 
